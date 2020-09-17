@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel=stylesheet type="text/css" href="my_css.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel=stylesheet type="text/css" href="composing.css">
+</head>
+<body>
+  <div class="container-allpage">
+	  <div class="sidebar">
+      <div class="have-children"><a href="#"><i class="fa fa-list"></i> One</a>
+        <div>
+          <li class="have-childrenOne"><a href="#"><i class="fa fa-star-o"></i>01</a></li>
+          <li class="scorllbarOne" style=""><a href="#">1111</a></li>
+          <li class="scorllbarOne"><a href="#">2222</a></li>
+          <li class="scorllbarOne"><a href="#">3333</a></li>
+          <li class="scorllbarOne"><a href="#">4444</a></li>
+        </div>
+      </div>
+      <div>
+        <li class="have-childrenTwo"><a href="#"><i class="fa fa-star-o"></i>02</a></li>
+        <li class="scorllbarTwo"><a href="#">1111</a></li>
+        <li class="scorllbarTwo"><a href="#">2222</a></li>
+        <li class="scorllbarTwo"><a href="#">333</a></li>
+        <li class="scorllbarTwo"><a href="#">4444</a></li>
+      </div>
+      <div>
+        <li class="have-childrenThree"><a href="#"><i class="fa fa-star-o"></i>03</a></li>
+        <li class="scorllbarThree"><a href="#">1111</a></li>
+        <li class="scorllbarThree"><a href="#">2222</a></li>
+        <li class="scorllbarThree"><a href="#">333</a></li>
+        <li class="scorllbarThree"><a href="#">4444</a></li>
+      </div>
+      <div>
+        <li class="have-childrenFour"><a href="#"><i class="fa fa-star-o"></i>04</a></li>
+        <li class="scorllbarFour"><a href="">1111</a></li>
+        <li class="scorllbarFour"><a href="">2222</a></li>
+        <li class="scorllbarFour"><a href="">333</a></li>
+        <li class="scorllbarFour"><a href="">4444</a></li>
+      </div>
+    </div>
+	  <div class="topbar">
+          <div class="inner">
+            <div class="resident-1">
+              <i class="fa fa-user"></i>
+              <input id="accounting" class="" type="text" placeholder=" " size="15">
+            </div>
+            <div class="resident-2">
+              <i class="fa fa-fw fa-lock"></i>
+              <input id="password" class="" type="text" placeholder=" " size="15">
+            </div>
+            <div class="all-btn">
+              <button class="btn-1">sign in</button>
+              <button class="btn-1">register</button>
+              <button class="btn-1">free</button>
+              <button class="btn-1">Homepage</button>
+            </div>
+          </div>
+    </div>
+    <div class="msgBody" id="para1">
+      <section id="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 mb-4" id="myFunction">
+              <div class="card">
+                <img class="card-img-left" src="" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">123</h5>
+                  <p class="card-text"><span id="Check_Txt">time：<span id="Check_i">0:0:0</span></p>
+                  <a href=""class="btn btn-outline-success btn-sm">3</a>
+                  <a href="" class="btn btn-outline-danger btn-sm">3</a>
+                  <a href="" class="btn btn-outline-danger btn-sm">3</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+  $(".have-childrenOne").on('click',function(){
+    $(".scorllbarOne").slideToggle("quick");
+  });
+});
+
+$(document).ready(function(){
+  $(".have-childrenTwo").on('click',function(){
+    $(".scorllbarTwo").slideToggle("quick");
+  });
+});
+
+$(document).ready(function(){
+  $(".have-childrenThree").on('click',function(){
+    $(".scorllbarThree").slideToggle("quick");
+  });
+});
+$(document).ready(function(){
+  $(".have-childrenFour").on('click',function(){
+    $(".scorllbarFour").slideToggle("quick");
+  });
+});
+$(document).ready(function(){
+  $(".have-childrenFive").on('click',function(){
+    $(".scorllbarFive").slideToggle("quick");
+  });
+});
+
+var SetMinute = 240;
+    function Check_Time() {
+        SetMinute -= 1;
+        var Check_i = document.getElementById("Check_i");
+        var Cal_Hour = Math.floor(SetMinute / 3600);
+        var Cal_Minute = Math.floor(Math.floor(SetMinute % 3600) / 60);
+        var Cal_Second = SetMinute % 60;
+        Check_i.innerHTML = Cal_Hour + ":" + Cal_Minute + ":" + Cal_Second + " ";
+    }
+    var mm = window.setInterval("Check_Time()", 1000);
+
+ for (i = 0; i < 10; i++) {
+   let item = document.querySelector('#myFunction').cloneNode( true );
+   document.querySelector('#para1 .row').append(item);
+ }
+</script>
+</html>

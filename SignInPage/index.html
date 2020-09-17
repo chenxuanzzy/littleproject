@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>sign-in-account</title>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<style>
+body
+{
+  padding-left:10%;
+  padding-top: 50px;
+  background: #757F9A;
+}
+.container-fluid
+{
+  background-image:url(https://i.imgur.com/R7wWdoJ.jpg);
+  font-weight:bold;
+  font-family: 'Ubuntu';
+  width:1000px;
+  box-shadow: 7px 7px 8px #000000;
+}
+.content {
+  width: 500px;
+  text-align: center;
+  background-image:url(https://i.postimg.cc/WpfwJG30/topography.png);
+  font-size:16px;
+  margin-bottom: 5%;
+}
+h1 {
+  padding-top:40px;
+  color:#003C9D;
+  font-family: 'Pacifico';
+}
+h2 {
+  padding-top:10px;
+}
+h3 {
+  padding-top:10px;
+}
+label {
+  font-family: 'Ubuntu', ;
+  font-size:20px;
+}
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #a6827e;
+	background:linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+	background-color:#7d5d3b;
+	border-radius:4px;
+	border:1px solid #54381e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	padding:6px 150px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d3534;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+	background-color:#634b30;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+p {
+  cursor:pointer;
+}
+</style>
+<body>
+  <div class="container-fluid" >
+    <div class="content" >
+    <h1>Review</h1></br>
+    <h2>Welcome!</h2>
+    <h3>Sign in by entering the information. </h3></br></br></br></br></br><br>
+    <form action="/action_page.php" style="font-family: 'Ubuntu' ">
+    <div class="setting">
+    <label for="fname">　Email address：</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">　　　Password：</label>
+    <input type="text" id="lname" name="lname"><br><br></div><br><br>
+    <div class="movebtn">
+      <a href="#" class="myButton" >Submit</a>
+    </div></br>
+    <p>Don't have an account？</p>
+    <p>Creat one here.</p></br>
+  </div>
+ </div>
+</div>
+</body>
+</html>
