@@ -1,0 +1,52 @@
+html,
+body{
+    font-family:'Microsoft JhengHei', '微軟正黑體';
+    height: 100%;
+     background-image: url("background02.png");/*body藍 */
+    background-repeat: repeat;
+    max-width: 100%;
+}
+.top{
+    background-color: white;
+    padding:20px;
+    width: auto;
+}
+img
+{
+    position: static;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+h5{
+    padding-top: 6px;
+    color: white;
+    font-weight:bold;
+}
+h6
+{
+    color:yellow;
+}
+.qrcode
+{
+    padding:20px;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight:bold;
+}
+
+button{
+    border-radius: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+.button01
+{
+    margin: 0 auto;
+    display: block;
+    font-family:'微軟正黑體';
+    color:rgba(247, 17, 17, 0.877);
+    font-weight:bold;
+    border: rgba(1, 66, 104, 0.459) 0.4px solid;
+    width: 300px;
+}
