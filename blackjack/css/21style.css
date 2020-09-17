@@ -1,0 +1,63 @@
+body
+{
+  background-image: url(blackground.png);
+  padding-top: 40px;
+  font-family:'Microsoft JhengHei', '微軟正黑體';
+  font-weight: bolder;
+}
+.content
+{
+  font-size: 20px;
+  margin: auto;
+  font-weight:bold;
+  max-width: 50%;
+  box-shadow: 7px 7px 8px #000000;
+  background-color: rgba(206, 204, 199, 0.582);
+  text-align: center;
+  border-radius: 3%;
+}
+
+input
+{
+   border: 0;
+   padding-left: 5px;
+   outline: 0;
+   border: 1px solid rgba(95, 83, 76, 0.89);
+}
+
+
+label{
+  font-family: 'Ubuntu', ;
+  font-size:20px;
+}
+
+.movebtn
+{
+  padding-left:15%;
+  padding-bottom: 30px;
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #a6827e;
+	background:linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+	background-color:#7d5d3b;
+	border-radius:6px;
+	border:2px solid #54381e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	padding:7px 80px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d3534;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+	background-color:#634b30;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
